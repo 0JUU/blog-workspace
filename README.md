@@ -14,7 +14,7 @@
    - Spring Boot
    - Gradle
    - Java 11
-   - WAS(Web-Application-Server) : Apache Tomcat 8.0
+   - WAS : Apache Tomcat 8.0
    - Database
      * MySQL
    - Developer tool

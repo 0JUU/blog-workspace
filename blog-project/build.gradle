@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '2.7.16'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id "org.flywaydb.flyway" version "9.8.1"
 }
 
 group = 'com.blog'
@@ -15,9 +16,18 @@ repositories {
 	mavenCentral()
 }
 
+flyway {
+	url = 'jdbc:mysql://localhost:3306/blogproject'
+	user = 'blogproject'
+}
+
 dependencies {
+	compileOnly("org.springframework.boot:spring-boot-devtools:")
+	runtimeOnly 'com.mysql:mysql-connector-j'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.flywaydb:flyway-mysql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

@@ -21,5 +21,6 @@
      * Java : IntelliJ
      * MySQL : Flyway
      * REST API : Swagger 3.0
+     * Test : jUnit5
 
 -----------

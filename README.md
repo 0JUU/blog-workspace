@@ -11,8 +11,7 @@
    - Spring Boot
    - Java 11
    - WAS : Apache Tomcat 8.0
-   - Database
-     * MySQL
+   - Database : MySQL
     
 
 + Developer Tool
